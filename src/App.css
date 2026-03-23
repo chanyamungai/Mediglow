@@ -14,8 +14,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #f817b5;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,287 @@
   to {
     transform: rotate(360deg);
   }
+}
+.carousel-item img {
+  height: 500px;        /* fixed height for all slides */
+  object-fit: cover;    /* keeps image aspect ratio and crops excess */
+  width: 100%;          /* full width */
+}
+
+.carousel-caption {
+  bottom: 20%;          /* adjust text position */
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;      /* smaller height for mobile */
+  }
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #ff9ccf, #ff6fa3); /* soft pink gradient */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.logo {
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  padding: 8px 18px;
+  border-radius: 25px; /* makes it rounded */
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: #fff;
+}
+
+.nav-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.nav-btn.home { background-color: #ff7eb9; }
+.nav-btn.add { background-color: #ff4e8d; }
+.nav-btn.signin { background-color: #ff1f70; }
+.nav-btn.signup { background-color: #ff85a2; }
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 100px;
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4); /* soft pink gradient */
+  border-radius: 15px;
+  margin: 20px 30px;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ff4e8d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.hero-image img {
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product_img{
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+
+
+
+.arrivals{
+  color: #141414;          
+  text-align: center;       
+  font-weight: bold; 
+  text-decoration: underline 3px;
+  padding: 4px;
+}
+
+
+
+.card  {
+  position: relative;
+  overflow: hidden; /* ensure overlay doesn’t spill out */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* slight lift */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05); /* zoom image */
+}
+
+/* Ensure text & button are above the overlay */
+.card-body {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+/* Footer Styles for Charme Beauty */
+footer {
+    background-color: #1c1c1c; /* dark background */
+    color: #fff; /* white text */
+    text-align: center;
+    padding: 30px 20px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+footer b {
+    font-size: 1.1rem;
+    color: #ff69b4; /* bright pink for your name */
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #ffb6c1; /* soft pink for tagline */
+}
+
+footer a {
+    color: #ff69b4; /* pink links */
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff1493; /* darker pink on hover */
+    transform: scale(1.1);
+}
+
+footer .divider {
+    color: #ff69b4;
+    margin: 0 5px;
+}
+/* Elegant Black & Pink About Us Section */
+.about-us {
+    background-color: #111; /* deep black */
+    color: #ffc0cb; /* soft pink text */
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 1.7;
+    transition: transform 0.3s ease;
+}
+
+.about-us h2 {
+    color: #ff1493; /* bright pink heading */
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+.about-us:hover {
+    transform: scale(1.02); /* subtle hover effect */
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        padding: 40px 15px;
+    }
+
+    .about-us h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+}
+
+.signup-card {
+  border-radius: 15px;
+  background-color: #fff; /* White form */
+  padding: 30px;
+  /* Dark pink glow around the form */
+  box-shadow: 0 0 25px 5px #c71585 !important;
+  transition: all 0.3s ease;
+}
+
+.signup-card:hover {
+  box-shadow: 0 0 35px 10px #c71585 !important; /* Brighter glow on hover */
+  transform: translateY(-5px);
+}
+
+/* Sign-in card shadow like signup page */
+.signin-page .card {
+  border-radius: 15px;          /* rounded corners */
+  background-color: #fff;        /* white card background */
+  padding: 30px;
+  box-shadow: 0 0 25px 5px #c71585; /* dark pink glow */
+  transition: all 0.3s ease;    /* smooth hover effect */
+}
+
+.signin-page .card:hover {
+  box-shadow: 0 0 35px 10px #c71585; /* brighter glow on hover */
+}
+
+
+.addproducts-page, .shadow-product {
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 25px 5px #c71585; /* dark pink glow */
+  transition: all 0.3s ease;
+}
+
+.addproducts-page:hover, .shadow-product:hover {
+  box-shadow: 0 0 35px 10px #c71585;
+}
+
+.product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
