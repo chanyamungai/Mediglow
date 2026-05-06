@@ -124,6 +124,35 @@ const Getproducts = () => {
   <button className="carousel-control-next" type="button" data-bs-target="#mycarousel" data-bs-slide="next">
     <span className="carousel-control-next-icon"></span>
   </button>
+        <section class="favorites">
+          <div class="section-header">
+            <h2>Our Favorites 💖</h2>
+            <p>Handpicked beauty products loved by our customers.</p>
+          </div>
+
+          <div class="favorites-grid">
+    
+          <div class="product-card">
+            <img src="images/concealer.webp" alt="foundation"/>
+            <h3>Rose concealer</h3>
+            <p>2500 Ksh</p>
+            <a href="/products/1" class="btn">Buy Now</a>
+          </div>
+          <div class="product-card">
+            <img src="images/no1.webp" alt="no1"/>
+            <h3>Blush</h3>
+            <p>18 Ksh</p>
+            <a href="/products/2" class="btn">Buy Now</a>
+          </div>
+
+    <div class="product-card">
+      <img src="images/mascara.webp" alt="Mascara"/>
+      <h3>Mascara</h3>
+      <p>2200 ksh</p>
+      <a href="/images/mascara.webp" class="btn">Buy Now</a>
+    </div>
+  </div>
+</section>
   </div>
       <footer>
         <b>Developed by Chanya &copy; 2026. All rights reserved.</b>
